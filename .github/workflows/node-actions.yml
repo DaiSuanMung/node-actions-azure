@@ -29,4 +29,5 @@ jobs:
       with:
           context: .
           push: true
+          repository: daisuanmung/node-actions
           tags: user/app:latest
