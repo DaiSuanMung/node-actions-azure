@@ -22,10 +22,10 @@ jobs:
       uses: docker/setup-buildx-action@v1
       
     #Azure Cli login
-    #- name: Login to Azure
-    #  uses: azure/login@v1
-    #  with:
-     #   creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - name: Login to Azure
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
     
     #Build and push Docker images
     - name: Azure Docker Images login
